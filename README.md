@@ -66,7 +66,7 @@ docker compose down
 
 ## 🎯 **Acessando a Aplicacao**
 Apos rodar os containers, acesse:
-- 🌐 **Frontend**: [http://localhost:80](http://localhost:4000) *(ou porta configurada no Dockerfile)*
+- 🌐 **Frontend**: [http://localhost:4000](http://localhost:4000) *(ou porta configurada no Dockerfile)*
 - 🛠️ **Backend**: [http://localhost:8080](http://localhost:8080) *(ou a porta definida na API)*
 
 ---
