@@ -1,10 +1,13 @@
 export interface Pageable<T> {
   content: T[];
   totalPages: number;
+  page: {
+    size: number,
+    number: number
+    totalElements: number
+    totalPages: number
+  }
   totalElements: number;
-  size: number;
-  number: number;
-  numberOfElements: number;
   first: boolean;
   last: boolean;
   empty: boolean;

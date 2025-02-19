@@ -1,13 +1,12 @@
-/* Estilização da MatTable */
+
 mat-table {
-  width: 100vw; /* Ocupa toda a largura da tela */
-  max-width: 100%; /* Garante que não ultrapasse os limites da tela */
+  width: 100vw;
+  max-width: 100%;
   border-collapse: collapse;
   margin: 5px;
   background-color: #fff;
 }
 
-/* Ajuste para contêiner externo */
 mat-card {
   width: 100vw;
   max-width: 100%;
@@ -15,7 +14,6 @@ mat-card {
   padding: 10px;
 }
 
-/* Cabeçalho */
 thead {
   background-color: #f5f5f5;
 }
@@ -28,7 +26,6 @@ th {
   border-bottom: 2px solid #ddd;
 }
 
-/* Ajustando largura das colunas */
 th:nth-child(1), td:nth-child(1) {
   text-align: center;
   width: 5%;
@@ -52,7 +49,7 @@ th:nth-child(6), td:nth-child(6) {
   text-align: center;
 }
 
-/* Estilização das células */
+
 td {
   padding: 10px;
   text-align: left;
@@ -60,25 +57,21 @@ td {
   color: #555;
 }
 
-/* Linhas alternadas para melhor visualização */
 tr:nth-child(even) {
   background-color: #fafafa;
 }
 
-/* Hover para destacar a linha ao passar o mouse */
 tr:hover {
   background-color: #e0e0e0;
   cursor: pointer;
 }
 
-/* Estilização para botões */
 button {
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 4px;
 }
 
-/* Ajustes para painéis expansíveis */
 mat-expansion-panel-header {
   background-color: #e0e0e0;
   color: #333;
@@ -93,14 +86,12 @@ mat-expansion-panel-header mat-panel-title {
   justify-content: space-between;
 }
 
-/* Conteúdo expandido */
 .expanded-content {
   padding: 10px 15px;
   background-color: #fafafa;
   border-top: 1px solid #ddd;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   th, td {
     padding: 8px;
