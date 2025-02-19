@@ -1,0 +1,25 @@
+services:
+  rem-frontend:
+    image: rem-frontend-service:latest
+    container_name: rem-frontend-service
+    restart: always
+    ports:
+      - "4000:4000"
+    depends_on:
+      - rem-backend
+    networks:
+      - rem-network
+
+  rem-backend:
+    image: rem-backend-service:latest
+    container_name: rem-backend-service
+    restart: always
+    environment:
+      - SERVER_PORT=8080   
+    ports:
+      - "8080:8080"
+    networks:
+      - rem-network
+
+networks:
+  rem-network:

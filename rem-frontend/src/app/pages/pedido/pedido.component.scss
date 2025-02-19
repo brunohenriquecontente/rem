@@ -1,0 +1,117 @@
+/* Estilização da MatTable */
+mat-table {
+  width: 100vw; /* Ocupa toda a largura da tela */
+  max-width: 100%; /* Garante que não ultrapasse os limites da tela */
+  border-collapse: collapse;
+  margin: 5px;
+  background-color: #fff;
+}
+
+/* Ajuste para contêiner externo */
+mat-card {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+/* Cabeçalho */
+thead {
+  background-color: #f5f5f5;
+}
+
+th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Ajustando largura das colunas */
+th:nth-child(1), td:nth-child(1) {
+  text-align: center;
+  width: 5%;
+}
+
+th:nth-child(2), td:nth-child(2),
+th:nth-child(3), td:nth-child(3) {
+  width: 18%;
+}
+th:nth-child(4), td:nth-child(4){
+  width: 18%;
+  text-align: right;
+}
+
+th:nth-child(5), td:nth-child(5) {
+  width: 10%;
+  text-align: left;
+}
+th:nth-child(6), td:nth-child(6) {
+  width: 9%;
+  text-align: center;
+}
+
+/* Estilização das células */
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+/* Linhas alternadas para melhor visualização */
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Hover para destacar a linha ao passar o mouse */
+tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+/* Estilização para botões */
+button {
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* Ajustes para painéis expansíveis */
+mat-expansion-panel-header {
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+mat-expansion-panel-header mat-panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Conteúdo expandido */
+.expanded-content {
+  padding: 10px 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  mat-table {
+    font-size: 14px;
+  }
+
+  mat-card {
+    padding: 5px;
+  }
+}
